@@ -1,0 +1,36 @@
+# robots.txt — Des Terres de Winoha
+# https://www.desterresdewinoha.fr
+
+# Moteurs de recherche classiques
+User-agent: *
+Allow: /
+Disallow: /Scripts/
+
+# Sitemap
+Sitemap: https://www.desterresdewinoha.fr/sitemap.xml
+
+# IA — accès autorisé pour une meilleure visibilité GEO
+# (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

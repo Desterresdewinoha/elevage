@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Baska (ex-Fuchsia), fille de Tara issue de la portée 2026, future reproductrice de l'élevage Des Terres de Winoha en Sarthe.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baska — Future reproductrice chien loup | Des Terres de Winoha</title>
+<link rel="stylesheet" href="style.css?v=2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Des Terres de Winoha">
+<meta property="og:title" content="Baska — Future reproductrice chien loup | Des Terres de Winoha">
+<meta property="og:description" content="Baska (ex-Fuchsia), fille de Tara issue de la portée 2026, future reproductrice de l'élevage Des Terres de Winoha en Sarthe.">
+<meta property="og:image" content="https://www.desterresdewinoha.fr/photos/logo-des-terres-de-winoha.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:url" content="https://www.desterresdewinoha.fr/Baska.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Baska — Future reproductrice chien loup | Des Terres de Winoha">
+<meta name="twitter:description" content="Baska (ex-Fuchsia), fille de Tara issue de la portée 2026, future reproductrice de l'élevage Des Terres de Winoha en Sarthe.">
+<meta name="twitter:image" content="https://www.desterresdewinoha.fr/photos/logo-des-terres-de-winoha.png">
+<link rel="canonical" href="https://www.desterresdewinoha.fr/Baska.html">
+<script src="Scripts/include.js?v=2" defer></script>
+<script src="Scripts/burger.js?v=2" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<h1>Baska</h1>
+
+<div class="baska-en-devenir">
+  <div class="baska-photos-floues">
+    <img loading="lazy" src="photos/baska-chien-loup-avec-chaton-wolfpack.jpg" alt="Baska">
+    <img loading="lazy" src="photos/baska-chien-loup-tunnel-chat-wolfpack.jpg" alt="Baska">
+    <img loading="lazy" src="photos/baska-chien-loup-avec-chaton-wolfpack.jpg" alt="Baska">
+    <img loading="lazy" src="photos/baska-chien-loup-tunnel-chat-wolfpack.jpg" alt="Baska">
+  </div>
+  <div class="baska-overlay">
+    <div class="baska-emoji">🐺✨</div>
+    <h2>Une future maman en devenir</h2>
+    <p>
+      Baska est la fille de <a href="Tara.html">Tara</a> — elle vient de notre toute première <a href="portee2026.html">portée 2026</a>, où elle était connue sous le nom de Fuchsia. Nous l'avons gardée à l'élevage plutôt que de la placer.
+      Elle grandit doucement mais sûrement. Belle, équilibrée et pleine de vie, 
+      elle n'est pas encore en reproduction — mais le moment venu, elle sera une maman 
+      formidable. Sa fiche complète et ses tests de santé seront publiés ici dès qu'elle 
+      sera prête. Encore un peu de patience… les meilleures choses se méritent ! 🐾
+    </p>
+  </div>
+</div>
+
+<div class="baska-encart-chat">
+  🐱 Ce que l'on sait déjà : Baska vit au quotidien avec nos deux chats depuis toute petite. 
+  Une cohabitation naturelle et sereine qui se transmettra à ses futurs chiots.
+</div>
+
+<div class="page-chien">
+
+  <!-- IDENTITÉ -->
+  <div class="section-fiche">
+    <h2>Identité</h2>
+    <div class="badges-identite">
+      <span class="badge">♀ Femelle</span>
+      <span class="badge">📅 Née le 13/01/2026 · <span id="age-baska"></span></span>
+    </div>
+  </div>
+
+  <!-- ASCENDANCE GÉNÉTIQUE EMBARK -->
+  <div class="section-fiche">
+    <h2>Ascendance génétique <span style="font-size:13px; font-weight:400; color:#888;">— Test Embark</span></h2>
+
+    <div class="bloc-genetique-ascendance">
+      <div class="camembert-genetique" style="background: conic-gradient(
+        var(--gene-clt) 0% 44.9%,
+        var(--gene-loup) 44.9% 66.5%,
+        var(--gene-husky) 66.5% 84.8%,
+        var(--gene-berger) 84.8% 93.2%,
+        var(--gene-malinois) 93.2% 100%
+      );"></div>
+      <ul class="legende-genetique">
+        <li><span class="legende-pastille" style="background:var(--gene-clt);"></span> Chien-loup tchécoslovaque <span class="legende-pourcentage">44,9 %</span></li>
+        <li><span class="legende-pastille" style="background:var(--gene-loup);"></span> Loup gris <span class="legende-pourcentage">21,6 %</span></li>
+        <li><span class="legende-pastille" style="background:var(--gene-husky);"></span> Husky sibérien <span class="legende-pourcentage">18,3 %</span></li>
+        <li><span class="legende-pastille" style="background:var(--gene-berger);"></span> Berger allemand <span class="legende-pourcentage">8,4 %</span></li>
+        <li><span class="legende-pastille" style="background:var(--gene-malinois);"></span> Berger belge malinois <span class="legende-pourcentage">6,8 %</span></li>
+      </ul>
+    </div>
+    <p class="mention-ascendance">Résultats du test d'ascendance Embark de Baska. Les tests de santé (DM, MDR1, nanisme hypophysaire...) seront publiés dès qu'elle sera en âge d'être testée en vue de la reproduction.</p>
+  </div>
+
+</div>
+
+<script>
+function calculerAgeLisible(dateNaissanceISO) {
+  var naissance = new Date(dateNaissanceISO);
+  var maintenant = new Date();
+  var annees = maintenant.getFullYear() - naissance.getFullYear();
+  var mois = maintenant.getMonth() - naissance.getMonth();
+  if (maintenant.getDate() < naissance.getDate()) mois--;
+  if (mois < 0) { annees--; mois += 12; }
+  if (annees <= 0) return mois + ' mois';
+  if (mois === 0) return annees + ' an' + (annees > 1 ? 's' : '');
+  return annees + ' an' + (annees > 1 ? 's' : '') + ' et ' + mois + ' mois';
+}
+document.addEventListener('DOMContentLoaded', function () {
+  var elAge = document.getElementById('age-baska');
+  if (elAge) elAge.textContent = calculerAgeLisible('2026-01-13');
+});
+</script>
+
+<div id="site-footer"></div>
+
+</body>
+</html>

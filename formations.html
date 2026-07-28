@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formations chien loup — À venir | Des Terres de Winoha</title>
+<meta name="description" content="Formations sur le chien loup mixte par l'élevage Des Terres de Winoha — contenu en cours de préparation. Inscrivez-vous pour être prévenu en avant-première.">
+<link rel="stylesheet" href="style.css?v=2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Des Terres de Winoha">
+<meta property="og:title" content="Formations chien loup — Des Terres de Winoha">
+<meta property="og:description" content="Formations sur le chien loup mixte par l'élevage Des Terres de Winoha en Sarthe — contenu en cours de préparation.">
+<meta property="og:image" content="https://www.desterresdewinoha.fr/photos/logo-des-terres-de-winoha.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:url" content="https://www.desterresdewinoha.fr/formations.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Formations chien loup — Des Terres de Winoha">
+<meta name="twitter:description" content="Formations sur le chien loup mixte par l'élevage Des Terres de Winoha en Sarthe — contenu en cours de préparation.">
+<meta name="twitter:image" content="https://www.desterresdewinoha.fr/photos/logo-des-terres-de-winoha.png">
+<link rel="canonical" href="https://www.desterresdewinoha.fr/formations.html">
+<script src="Scripts/include.js?v=2" defer></script>
+<script src="Scripts/burger.js?v=2" defer></script>
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+<h1>Formations</h1>
+
+<div class="formations-container">
+
+  <!-- Contenu flouté en arrière-plan -->
+  <div class="formations-floue">
+    <h2>Comprendre le chien loup</h2>
+    <p>Le chien loup mixte est un animal d'exception qui nécessite une approche spécifique. Ces formations s'adressent aux propriétaires souhaitant approfondir leurs connaissances.</p>
+    <h2>Module 1 — Communication canine</h2>
+    <p>Apprenez à lire le langage corporel de votre chien loup, à comprendre ses signaux d'apaisement et à adapter votre communication.</p>
+    <h2>Module 2 — Éducation positive</h2>
+    <p>Les fondamentaux de l'éducation bienveillante appliqués au chien loup. Gérer l'instinct de prédation, la fugue, la socialisation.</p>
+    <h2>Module 3 — Alimentation et santé</h2>
+    <p>Besoins nutritionnels spécifiques, prévention des maladies génétiques, suivi vétérinaire adapté.</p>
+  </div>
+
+  <!-- Overlay -->
+  <div class="formations-overlay">
+    <div class="overlay-box">
+      <span class="overlay-emoji">📚</span>
+      <h2>Formations en cours de préparation</h2>
+      <p>Nous travaillons sur du contenu pour tout propriétaire de chien loup désireux d'élever son chiot au mieux. Laissez votre email pour être prévenu·e en avant-première dès le lancement.</p>
+
+      <form class="form-preinscription"
+            id="form-formations"
+            action="https://formspree.io/f/xbdzozyz"
+            method="POST">
+        <input type="hidden" name="_subject" value="Pré-inscription formations des Terres de Winoha">
+        <input type="hidden" name="source" value="page-formations">
+        <h3>✉️ Me prévenir au lancement</h3>
+        <p>Votre email ne sera utilisé que pour vous informer de l'ouverture des formations.</p>
+        <input type="email"
+               name="email"
+               placeholder="votre@email.fr"
+               required
+               autocomplete="email">
+        <button type="submit" class="btn-preinscription">Je veux être prévenu·e</button>
+        <p class="mention-rgpd">
+          Données utilisées uniquement pour cette notification. Aucun démarchage.
+          <a href="mentions-legales.html" style="color:inherit;">Mentions légales</a>
+        </p>
+      </form>
+
+      <div class="form-confirm" id="form-formations-confirm">
+        ✅ C'est noté ! Vous serez parmi les premiers informés.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var form = document.getElementById('form-formations');
+  var confirm = document.getElementById('form-formations-confirm');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function (r) {
+      if (r.ok) {
+        form.style.display = 'none';
+        confirm.style.display = 'block';
+      } else {
+        alert('Une erreur est survenue. Réessayez ou contactez-nous par email.');
+      }
+    }).catch(function () {
+      alert('Vérifiez votre connexion et réessayez.');
+    });
+  });
+})();
+</script>
+
+<div id="site-footer"></div>
+
+</body>
+</html>
